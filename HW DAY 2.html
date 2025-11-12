@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact manager app</title>
+</head>
+<body>
+    <script language = "javascript" type="text/javascript">
+        const Contact1={
+            name: "Anil Kumar",
+            phone: "9456564545",
+            email: "anilkumar@gmail.com",
+            getinfo: function() {
+                return("name: "+this.name+ "phone: "+this.phone+ "email: "+this.email);
+            }
+            
+        };
+        const Contact2={
+            name: "Revathy",
+            phone: "9456556745",
+            email: "revathy@gmail.com",
+            getinfo: function() {
+                return("name: "+this.name+ "phone: "+this.phone+ "email: "+this.email);
+            }
+            
+        };
+        function printContactInfo(Contact){
+            console.log(Contact.getinfo());
+        }
+        printContactInfo(Contact1);
+        printContactInfo(Contact2);
+    </script>
+    
+</body>
+</html>

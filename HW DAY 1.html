@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery shop</title>
+</head>
+<body>
+    <h2>Calculation of Grocery items</h2>
+    <script language ="javascript" type="text/javascript">
+        let rice = "Rice";
+        let sugar = "Sugar";
+        let wheat = "Wheat";
+        // prices
+        let riceprice = 40;
+        let Sugarprice = 50;
+        let wheatprice = 30;
+        // quantities purchased
+        let ricequty = 3;
+        let Sugarquty = 4;
+        let Wheatquty = 5;
+        // cost calculations
+        let ricecost = riceprice * ricequty;
+        let Sugarcost = Sugarprice * Sugarquty;
+        let wheatcost = wheatprice * Wheatquty;
+        // display the cost for each item
+        console.log(rice + " cost: ₹" + ricecost);
+        console.log(sugar + " cost: ₹" + Sugarcost);
+        console.log(wheat + " cost: ₹" + wheatcost);
+        // calculate total bill
+        let totalbill = ricecost + Sugarcost + wheatcost;
+        console.log("Total Bill: ₹" + totalbill);
+        //change the quantity of sugar
+        Sugarquty = 6; //changed to 6
+        Sugarcost = Sugarprice * Sugarquty;
+        // Recalculate the updated total bill
+        let updatedtotalbill = ricecost + Sugarcost + wheatcost;
+        // display updated total bill
+        console.log("updated Total Bill (after changing sugar quantity): ₹" + updatedtotalbill);
+        
+
+    </script>
+    
+</body>
+</html>

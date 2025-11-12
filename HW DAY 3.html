@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helper tool</title>
+</head>
+<body>
+    <script>
+        //Create UserProfile object
+        let userProfile={
+            username:"CoolUser99",
+            bio:"I LOVE coding! JavaScript is Great!!!"
+        };
+        //Create cleanUserBio function
+        function cleanUserBio(profile)
+        {
+            let cleanedUsername=profile.username.toLowerCase().trim();
+            let cleanedBio=profile.bio.toLowerCase().trim().replace(/javascript/g,"JS");
+            let bioLength=cleanedBio.length;
+
+            return{
+                cleanedUsername,
+                cleanedBio,
+                bioLength
+            };
+
+        }
+        //Output the final result using console.log
+        console.log(cleanUserBio(userProfile));
+    </script>
+    
+</body>
+</html>

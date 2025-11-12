@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online store sales</title>
+</head>
+<body>
+    <h2>Calculation Of Store Sales</h2>
+    <script language = "javascript" type="text/javascript">
+        let tshirtsold = 5;
+        let tshirtprice = 400;
+        let capsold = 3;
+        let capprice = 150;
+        let totalearnings = (tshirtsold * tshirtprice) + (capsold * capprice);
+        document.write("total earnings: ₹" + totalearnings + "<br>");
+        //change the price of t-shirts to ₹ 450 and recalculate
+        tshirtprice = 450;
+        let updatedtotal = (tshirtsold * tshirtprice) + (capsold * capprice);
+        document.write("updated total earnings (after price change):  ₹" + updatedtotal);
+
+    </script>
+    
+</body>
+</html>
