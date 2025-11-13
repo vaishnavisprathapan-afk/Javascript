@@ -7,28 +7,28 @@
 </head>
 <body>
     <script language="javascript" type="text/javascript">
-        let mysteryLevel=Math.floor(Math.random() * 50) + 1;
-        console.log("Mystery Level:",mysteryLevel);
+        let mysteryLevel = Math.floor(Math.random() * 50) + 1;
+        console.log("Mystery Level:", mysteryLevel);
 
-        let userScoreStr=prompt("Enter your score");
-        let userScore=Number(userInput);
-        console.log("User Score:",userScore);
+        let userInput = prompt("Enter your score (1-50):");
+        let userScore = Number(userInput);
+        console.log("User Score:", userScore);
 
-        let difference=Math.abs(mysteryLevel-userScore);
-        console.log("Absolute Difference:",difference);
+        let difference = Math.abs(mysteryLevel-userScore);
+        console.log("Absolute Difference:", difference);
 
-        let squareRoot=Math.sqrt(userScore);
-        console.log("Square Root of User Score:",squareRoot);
+        let squareRoot = Math.sqrt(userScore);
+        console.log("Square Root of User Score:", squareRoot);
 
-        console.log("Value of Pi:",Math.PI);
+        console.log("Value of Pi:", Math.PI);
 
-        let implicitResult="20" * 5;
-        console.log("Implicit Conversion(\"20\" * 5):",implicitResult);
+        let implicitResult = "20" * 5;
+        console.log('Implicit Conversion("20" * 5):', implicitResult);
 
-        let maximum=Math.max(10,20,mysteryLevel);
-        let minimum=Math.min(10,20,mysteryLevel);
-        console.log("Maximum Value:",maximum);
-        console.log("Minimum Value:",minimum);
+        let maximum = Math.max(10, 20, mysteryLevel);
+        let minimum = Math.min(10, 20, mysteryLevel);
+        console.log("Maximum Value:", maximum);
+        console.log("Minimum Value:", minimum);
     </script>
     
 </body>
