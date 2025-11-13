@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>small statistics widget</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        let randomNumber=Math.floor(Math.random() * 100) + 1;
+
+        let userScoreStr = "75";
+
+        let userScore = Number(userScoreStr);
+
+        //show the difference between the random number and user score
+        let difference=randomNumber-userScore;
+        console.log(`Random Number: ${randomNumber}`);
+        console.log(`User Score: ${userScore}`);
+        console.log(`Difference: ${difference}`);
+
+        let sqrtUserScore=Math.round(Math.sqrt(userScore));
+        console.log(`Rounded Square Root of User Score:${sqrtUserScore}`);
+        console.log(`The value of pie:${Math.PI}`);
+
+        let result="50"*2;
+        console.log(`"50"*2=${result}`);
+    </script>
+    
+</body>
+</html>
