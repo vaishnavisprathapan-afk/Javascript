@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Page</title>
+</head>
+<body>
+    <script language = "javascript" type="text/javascript">
+        let order = {
+            itemName:"sample Item",
+            isDelivered:true,
+            daysSinceDelivery:5
+        };
+        function checkReturnEligibility(order) {
+            console.log('itemName' in order);
+            let message = (order.isDelivered && order.daysSinceDelivery <=7)?  "Eligible for Return" : "Return period Expired";
+            console.log(message);
+            delete order.daysSinceDelivery;
+        }
+        checkReturnEligibility(order);
+    </script>
+    
+</body>
+</html>
