@@ -15,12 +15,12 @@
     let user = {
         name:"John Doe",
         age:20,
-        isAdmin:true
+        isAdmin: true
     };
-     function checkAdminAccess(){
+     function checkAccess(){
         let ageExists ="age"in user;
         document.getElementById("check").innerText = ageExists ? "Age Property exists.":"Age property does not exist.";
-        let access = (user.age>= 18 && user.isAdmin)
+        let access = (user.age >=18 && user.isAdmin)
         ? "Access Granted"
         : "Access Denied";
         document.getElementById("result").innerText=access;

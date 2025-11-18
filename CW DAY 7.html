@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Tracker</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var friend={name:"john",
+        birthDate:"1998-02-12"};
+        function getBirthdayDetails(frnd)
+        {
+            var date=new Date(frnd.birthDate);
+            var year=date.getFullYear();
+            var day=date.getDate();
+            var month=date.getMonth();
+            var months=["january","february","march","april","may","june","july","august","september","october","november","december"];
+            var monthName=months[month];
+            const today=new Date();
+            const age=today.getFullYear()-year;
+            console.log(`${frnd.name}was born on ${day} ${monthName},${year} and is ${age}`);
+        }
+        getBirthdayDetails(friend);
+
+
+    </script>
+    
+</body>
+</html>
