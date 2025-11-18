@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Result</title>
+</head>
+<body>
+    <script language = "javascript" type="text/javascript">
+    const students = [
+        { name: "Rahul", score: 80 },
+        { name: "Priya", score: 40 },
+        { name: "Amit", score: 95 },
+        { name: "Sneha", score: 20 },
+        { name: "Vikas", score: 65 }
+        ];
+
+            const studentNames = students.map(student => student.name);
+            console.log("Student Names:", studentNames);
+
+        
+            const scoreAbove60 = students.filter(student => student.score > 60).map(student => student.name);
+            console.log("Students scored more than 60:", above60);
+
+
+            const totalScore = students.reduce((sum, student) => sum + student.score, 0);
+            console.log("Total Score:", totalScore);
+
+            const allPassed = students.every(student => student.score > 35);
+            console.log("All students passed:", allPassed);
+
+            
+            const hasAbove90 = students.some(student => student.score > 90);
+            console.log("At least one student scored more than 90:", hasAbove90);
+
+        
+            const sortedStudents = students.sort((a, b) => b.score - a.score);
+            console.log("Students sorted by score:", sortedStudents.map(student => '${student.name}: ${student.score}'));  
+    </script>
+    
+</body>
+</html>
