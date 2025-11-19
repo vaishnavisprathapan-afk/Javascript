@@ -8,21 +8,32 @@
 <body>
     <script>
         var inputDate="2021-10-19";
+
         var userDate=new Date(inputDate);
+
         var currentDate=new Date();
+
         var uYear=userDate.getFullYear();
+
         var month=userDate.getMonth();
+
         var months=["january","february","march","april","may","june","july","august","september","october","november","december"];
+
         var umonthName=months[month];
+
         var udate=userDate.getDate();
+
         var currentYear=currentDate.getFullYear();
+
         var cMonth=currentDate.getMonth();
+
         var cMonthName=months[cMonth];
         var cdate=currentDate.getDate();
         console.log("User input past date is "+umonthName+" "+udate+","+uYear);
         console.log("Current date is "+cMonthName+" "+cdate+","+currentYear);
+
         var noFullYear=currentYear-uYear;
-        console.log(`${noFullYear} full year have passed since that date.`);
+         console.log(`${noFullYear} full year have passed since that date.`);
         var msg=(noFullYear>1)?"It has been more than a year since date":"It has been less than a year since date";
         console.log(msg);
     </script>

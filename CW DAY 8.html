@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+</head>
+<body>
+    <script>
+        var productCode,quantity,item,bill;
+
+        for(var i=1;i<=5;i++)
+        {
+           productCode=(prompt("Enter product code"));
+           quantity=parseInt(prompt("Enter quantity:"));
+    switch(productCode)
+    {
+        case 1:
+            item="Apple";
+            var price=30;
+            bill=price*quantity;
+            break;
+        case 2:
+            item="Banana";
+            var price=10;
+            bill=price*quantity;
+            break;
+        case 3:
+            item="Mango";
+            var price=50;
+            bill=price*quantity;
+            break;
+        default:
+            console.log("cannot find the price because of invalid product code");
+         }
+         console.log("Total billof "+item+" with quantity"+quantity+" is"+bill);
+         if(bill>100)
+         {
+            console.log("High Purchase");
+         }
+         else if(bill<100)
+         {
+            console.log("Normal Purchase");
+         }
+         else
+            continue;
+        }
+    </script>
+
+    
+</body>
+</html>
