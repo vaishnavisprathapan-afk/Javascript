@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment filtering system</title>
+</head>
+<body>
+    <script>
+        function cleanComment(input)
+        {
+            var cleanedComment=input.replace(/(bad|ugly|stupid)/ig,"***");
+            console.log(cleanedComment)
+            var numberMatch=input.match(/\d+/g);
+            var numbercount=numberMatch?numberMatch.length:0;
+            console.log(`The no of number is ${numbercount}` );
+            var capWord=input.match(/\b[A-Z][a-a-zA-Z]*/g);
+            var capWord=capWord?capWord.length:0;
+            console.log("Capitalized Word Count:"+capWord);
+
+            return
+            {
+             `newComment: ${cleanedComment} numCount: ${numbercount} capWords:${capWord}`;
+            }
+        }
+
+            var Comment= "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great.";
+            console.log(cleanComment(Comment));
+
+    
+        
+    
+    </script>
+    
+</body>
+</html>
