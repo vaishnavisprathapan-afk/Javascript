@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <script>
+        let comment;
+        comment="My son is 12 years old. Our flat number is 45 and contact is 9876543210.";
+        function checkNum(comm)
+        {
+            var isNum=/\d/.test(comm);
+            var newComment=comm.replace(/\d+/gi,"NUMBER");
+        
+            return{
+                numberS:isNum,
+                cleanComment:newComment
+            };
+        }
+        var result=checkNum(comment);
+        console.log(result.numberS);
+        console.log(result.cleanComment);
+
+    </script>
+    
+</body>
+</html>
